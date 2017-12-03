@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Country search engine</title>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="page-header">
+				<h1><i class="fa fa-globe" aria-hidden="true"></i> Country search engine</h1>
+			</div>
+		</header>
+		<main>
+			<div class="row">
+				<div class="col-xs-6">
+
+					<div class="well">
+						<div class="form-inline">
+							<div class="form-group">
+								<input id="country-name" class="form-control" type="text">
+								<button id="search" class="btn btn-primary">Search a country</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading">						
+							<h2><i class="fa fa-list-ul" aria-hidden="true"></i> List of countries</h2>
+							<p class="text-info">Click on the country to see details</p>
+						</div>
+						<div class="panel-body">
+							<ul id="countries">
+								<li>No data</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<div id="right-side" class="col-xs-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2><i class="fa fa-info" aria-hidden="true"></i> Details</h2>
+							<p class="text-muted"><i class="fa fa-trash" aria-hidden="true"></i> Hide</p>
+						</div>
+						<div id="details-container" class="panel-body">
+							<img id="country-flag" src="" alt="" title="" class="img-responsive img-thumbnail">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<td colspan="2">
+											<h3 id="country-Name"></h3>
+											<p class="h4"><em id="country-native"></em></p>	
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Capital</th>
+										<td id="country-capital"></td>
+									</tr>
+									<tr>
+										<th>Region</th>
+										<td id="country-region"></td>
+									</tr>
+									<tr>
+										<th>Subregion</th>
+										<td id="country-subregion"></td>
+									</tr>
+									<tr>
+										<th>Population</th>
+										<td id="country-population"></td>
+									</tr>
+									<tr>
+										<th>Currency</th>
+										<td id="country-currency"></td>
+									</tr>
+									<tr>
+										<th>Languages</th>
+										<td id="country-lang"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<a class="btn btn-default top" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

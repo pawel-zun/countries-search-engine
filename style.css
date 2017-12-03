@@ -1,0 +1,40 @@
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.top {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+.container {
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 15px;
+}
+
+#countries {
+	list-style-type: none;
+	padding: 0;
+}
+
+#countries li {
+	cursor: pointer;
+}
+
+.image-mini {
+	width: 30px;
+	height: 20px;
+	border: 1px solid #000;
+	margin-right: 5px;
+}
+
+.text-muted {
+	cursor: pointer;
+}
